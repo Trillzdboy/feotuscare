@@ -1,3 +1,15 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.foetus_text{
+    font-family: 'La Belle Aurore', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 72px;
+    color: #FF5573!important;
+}
+
 .s1_header_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
