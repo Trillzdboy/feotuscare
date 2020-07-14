@@ -15,15 +15,19 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 10px;
-    grid-template-areas: "information information img_description img_description"
+    grid-template-areas: "foetus_text foetus_text img_description img_description"
                          "information information img_description img_description"
                          "information information img_description img_description"
 }
 
+.foetus_text{
+    grid-area: foetus_text;
+    grid-row: 1;
+}
 .information{
     grid-area: information;
     grid-row: 2;
-    padding-top: 200px;
+    padding-top: 160px;
 }
 .img_description{
     grid-area: img_description;
