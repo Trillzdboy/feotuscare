@@ -1,0 +1,42 @@
+.s1_header_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    grid-template-areas: "information information img_description img_description"
+                         "information information img_description img_description"
+                         "information information img_description img_description"
+}
+
+.information{
+    grid-area: information;
+    grid-row: 2;
+    padding-top: 200px;
+}
+.img_description{
+    grid-area: img_description;
+}
+
+
+
+
+
+
+
+
+
+
+
+.subscribe_button{
+    padding: 11px 43px;
+   /* width: 170px;
+    height: 49px;*/
+    background: #18206F;
+    border-radius: 0px 5px 5px 0px;
+}
+.vanish{
+    border: none;
+    padding: 11px 43px;
+    height: 49px;
+    background-color: #F4F4F2;
+}
