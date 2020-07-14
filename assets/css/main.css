@@ -1,15 +1,10 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-.foetus_text{
-    font-family: 'La Belle Aurore', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 72px;
-    color: #FF5573!important;
-}
 
+
+
+/*-------------- s1_header -------------*/
 .s1_header_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -35,14 +30,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
 .subscribe_button{
     padding: 11px 43px;
    /* width: 170px;
@@ -56,3 +43,24 @@ body{
     height: 49px;
     background-color: #F2F3FF;
 }
+
+/*-------------- s2_app_features1 -------------*/
+
+/*-------------- s2_app_features2 -------------*/
+
+/*-------------- s2_app_features3 -------------*/
+
+/*-------------- s2_app_features4 -------------*/
+
+/*-------------- s2_app_features5 -------------*/
+
+/*-------------- s2_app_features6 -------------*/
+
+/*-------------- s3_our_pricing -------------*/
+
+/*-------------- s4_get_started -------------*/
+
+/*-------------- s4_footer -------------*/
+
+
+
