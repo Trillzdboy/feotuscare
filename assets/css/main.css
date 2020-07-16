@@ -9,7 +9,24 @@ body{
     line-height: 27px;
     color: #333333;
 }
-
+.features_list_paragraph{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+}
+.list_custom_spacing{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+.point_spacing{
+    margin-bottom: 8px;
+}
 
 /*-------------- s1_header -------------*/
 .s1_header_grid{
@@ -29,12 +46,37 @@ body{
 .information{
     grid-area: information;
     grid-row: 2;
-    padding-top: 160px;
+    padding-top: 150px;
 }
 .img_description{
     grid-area: img_description;
 }
+.fulllheight{
+    height: 100%;
+}
 
+@media (max-width: 992px){
+    .s1_header_grid{
+    grid-template-areas: "foetus_text foetus_text foetus_text foetus_text"
+                         "information information information information"
+                         "img_description img_description img_description img_description"
+}
+   .foetus_text{
+    grid-area: foetus_text;
+    grid-row: 1;
+}
+.information{
+    grid-area: information;
+    padding-top: 0px;
+    text-align: center;
+}
+.img_description{
+    grid-area: img_description;
+} 
+    .fulllheight{
+        height: auto;
+    }
+}
 
 
 .subscribe_button{
@@ -47,6 +89,31 @@ body{
     padding: 11px 43px;
     height: 49px;
     background-color: #F2F3FF;
+}
+
+.header_head{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #333333;
+}
+.header_description{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+}
+.head_subscription_alert{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
 }
 
 /*-------------- s2_app_features1 -------------*/
@@ -64,6 +131,24 @@ body{
 .s2_app_features1_text{
     grid-area: s2_app_features1_text;
     grid-row: 2;
+}
+
+@media (max-width: 768px){
+    .s2_app_features1_grid{
+    grid-template-areas: "s2_app_features1_image s2_app_features1_image s2_app_features1_image s2_app_features1_image"
+                         "s2_app_features1_text s2_app_features1_text s2_app_features1_text s2_app_features1_text"
+                         "s2_app_features1_text s2_app_features1_text s2_app_features1_text s2_app_features1_text"
+}
+  .s2_app_features1_image{
+    grid-area: s2_app_features1_image;
+      grid-column: 1/4;
+      text-align: left;
+}
+.s2_app_features1_text{
+    grid-area: s2_app_features1_text;
+    
+}  
+    
 }
 
 .features_heading{
@@ -104,6 +189,21 @@ body{
     text-align: right;
 }
 
+@media (max-width: 768px){
+    .s2_app_features2_grid{
+    grid-template-areas: "s2_app_features2_image s2_app_features2_image s2_app_features2_image s2_app_features2_image"
+                         "s2_app_features2_text s2_app_features2_text s2_app_features2_text s2_app_features2_text"
+                         "s2_app_features2_text s2_app_features2_text s2_app_features2_text s2_app_features2_text"
+}
+  .s2_app_features2_text{
+    grid-area: s2_app_features2_text;
+}
+.s2_app_features2_image{
+    grid-area: s2_app_features2_image; 
+    grid-column: 2/5;
+}    
+}
+
 /*-------------- s2_app_features3 -------------*/
 .s2_app_features3_grid{
     display: grid;
@@ -121,6 +221,23 @@ body{
     grid-row: 2;
 }
 
+@media (max-width: 768px){
+    .s2_app_features3_grid{
+    grid-template-areas: "s2_app_features3_image s2_app_features3_image s2_app_features3_image s2_app_features3_image"
+                         "s2_app_features3_text s2_app_features3_text s2_app_features3_text s2_app_features3_text"
+                         "s2_app_features3_text s2_app_features3_text s2_app_features3_text s2_app_features3_text"
+}
+  .s2_app_features3_image{
+    grid-area: s2_app_features3_image;
+      grid-column: 1/4;
+      text-align: left;
+}
+.s2_app_features3_text{
+    grid-area: s2_app_features3_text;
+    
+}  
+    
+}
 /*-------------- s2_app_features4 -------------*/
 .s2_app_features4_grid{
     display: grid;
@@ -139,6 +256,20 @@ body{
     text-align: right;
 }
 
+@media (max-width: 768px){
+    .s2_app_features4_grid{
+    grid-template-areas: "s2_app_features4_image s2_app_features4_image s2_app_features4_image s2_app_features4_image"
+                         "s2_app_features4_text s2_app_features4_text s2_app_features4_text s2_app_features4_text"
+                         "s2_app_features4_text s2_app_features4_text s2_app_features4_text s2_app_features4_text"
+}
+  .s2_app_features4_text{
+    grid-area: s2_app_features4_text;
+}
+.s2_app_features4_image{
+    grid-area: s2_app_features4_image; 
+    grid-column: 2/5;
+}    
+}
 /*-------------- s2_app_features5 -------------*/
 .s2_app_features5_grid{
     display: grid;
@@ -156,6 +287,23 @@ body{
     grid-row: 2;
 }
 
+@media (max-width: 768px){
+    .s2_app_features5_grid{
+    grid-template-areas: "s2_app_features5_image s2_app_features5_image s2_app_features5_image s2_app_features5_image"
+                         "s2_app_features5_text s2_app_features5_text s2_app_features5_text s2_app_features5_text"
+                         "s2_app_features5_text s2_app_features5_text s2_app_features5_text s2_app_features5_text"
+}
+  .s2_app_features5_image{
+    grid-area: s2_app_features5_image;
+      grid-column: 1/4;
+      text-align: left;
+}
+.s2_app_features5_text{
+    grid-area: s2_app_features5_text;
+    
+}  
+    
+}
 /*-------------- s2_app_features6 -------------*/
 .s2_app_features6_grid{
     display: grid;
@@ -174,6 +322,20 @@ body{
     text-align: right;
 }
 
+@media (max-width: 768px){
+    .s2_app_features6_grid{
+    grid-template-areas: "s2_app_features6_image s2_app_features6_image s2_app_features6_image s2_app_features6_image"
+                         "s2_app_features6_text s2_app_features6_text s2_app_features6_text s2_app_features6_text"
+                         "s2_app_features6_text s2_app_features6_text s2_app_features6_text s2_app_features6_text"
+}
+  .s2_app_features6_text{
+    grid-area: s2_app_features6_text;
+}
+.s2_app_features6_image{
+    grid-area: s2_app_features6_image; 
+    grid-column: 2/5;
+}    
+}
 /*-------------- s3_our_pricing -------------*/
 .s3_our_pricing_grid{
     display: grid;
@@ -286,6 +448,29 @@ body{
     grid-row: 2;
 }
 
+@media (max-width: 768px){
+    .s4_get_started_container{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    grid-template-areas: "email_pic email_pic email_pic email_pic"
+                         "email_pic email_pic email_pic email_pic"
+                         "email_form email_form email_form email_form"
+    
+}
+    .email_pic{
+    grid-area: email_pic;
+        grid-row: 1;
+}
+.email_form{
+    grid-area: email_form;
+    grid-row: 2;
+}
+}
+
+
+
+
 .get_started_heading{
     font-family: Raleway;
     font-style: normal;
@@ -307,6 +492,7 @@ body{
     bottom: 0;
     border-bottom: 2px solid #FF5573;
 }
+
 /*-------------- s4_footer -------------*/
 .icon_spacing{
     margin: 20px;
