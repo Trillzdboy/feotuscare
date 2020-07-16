@@ -84,6 +84,32 @@ body{
     background: #18206F;
     border-radius: 0px 5px 5px 0px;
 }
+
+
+.subscribe_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.subscribe_button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.subscribe_button:hover span {
+  padding-right: 25px;
+}
+
+.subscribe_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 .vanish{
     border: none;
     padding: 11px 43px;
