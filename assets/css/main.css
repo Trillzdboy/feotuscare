@@ -407,7 +407,7 @@ body{
 /* Create four equal columns that floats next to eachother */
 .column {
   float: left;
-  width: 14%;
+  width: 16%;
 }
 
 /* The Modal (background) */
