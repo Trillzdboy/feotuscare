@@ -14,6 +14,8 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+
+    
     
     
     
@@ -29,21 +31,21 @@
       <section id="s1_header">
       <div class="container s1_header_grid">
       
-      <div class="foetus_text">
+      <div class="foetus_text" data-aos="fade-up" data-aos-anchor-placement="top-center">
           <img src="/assets/images/foetuslogo.png" alt="">
       </div>
       
       <div class="information">
-      <h1 class="header_head">MONITOR YOUR BABY’S DEVELOPMENT</h1>
-      <p class="header_description">This mobile application helps pregnant women perform ultrasound from home. It is completely safe and harmless to the baby.</p>
-      <p class="head_subscription_alert">Get notified when we launch</p>
-      <form action="" class="form-group">
+      <h1 class="header_head" data-aos="fade-left">MONITOR YOUR BABY’S DEVELOPMENT</h1>
+      <p class="header_description" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">This mobile application helps pregnant women perform ultrasound from home. It is completely safe and harmless to the baby.</p>
+      <p class="head_subscription_alert" data-aos="zoom-in">Get notified when we launch</p>
+      <form action="" class="form-group" data-aos="fade-up">
           <input type="text" placeholder="Your Email Address" class="vanish">
           <button class="subscribe_button text-white"><span>Subscribe</span></button>
       </form>
       </div>
       
-      <div class="img_description" data-aos="flip-down">
+      <div class="img_description imagess" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <img class="img-fluid fulllheight" src="/assets/images/heroimage.png" alt="">
       </div>
       
@@ -58,7 +60,7 @@
       <div class="container s2_app_features1_grid">
       
       
-      <div class="s2_app_features1_image">
+      <div class="s2_app_features1_image imagess">
       <img class="img-fluid" src="/assets/images/features1.png" alt="">
       </div>
       
@@ -91,7 +93,7 @@
       </div>
       
       <div class="s2_app_features2_image">
-      <img class="img-fluid" src="/assets/images/features2.png" alt="">
+      <img class="img-fluid imagess" src="/assets/images/features2.png" alt="">
       </div>
       
       </div>
@@ -101,7 +103,7 @@
       <section id="s2_app_features3">
       <div class="container s2_app_features3_grid">
       <div class="s2_app_features3_image">
-      <img class="img-fluid" src="/assets/images/features3.png" alt="">
+      <img class="img-fluid imagess" src="/assets/images/features3.png" alt="">
       </div>
       
       <div class="s2_app_features3_text">
@@ -130,7 +132,7 @@
       </div>
       
       <div class="s2_app_features4_image">
-      <img class="img-fluid" src="/assets/images/features4.png" alt="">
+      <img class="img-fluid imagess" src="/assets/images/features4.png" alt="">
       </div>
       
       </div>
@@ -141,7 +143,7 @@
       <div class="container s2_app_features5_grid">
       
       <div class="s2_app_features5_image">
-      <img class="img-fluid" src="/assets/images/features5.png" alt="">
+      <img class="img-fluid imagess" src="/assets/images/features5.png" alt="">
       </div>
       
       <div class="s2_app_features5_text">
@@ -170,11 +172,121 @@
       </div>
       
       <div class="s2_app_features6_image">
-      <img class="img-fluid" src="/assets/images/features6.png" alt="">
+      <img class="img-fluid imagess" src="/assets/images/features6.png" alt="">
       </div>
       
       </div>
       </section>
+      
+      
+      
+      <div class="container py-5">
+         <h6 class="text-center price_heading"><span class="our_preview">Preview</span></h6>
+          
+          <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="/assets/images/features1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/assets/images/features2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/assets/images/features3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/assets/images/features4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+      <img src="/assets/images/features5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+      <img src="/assets/images/features6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="/assets/images/features1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="/assets/images/features2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="/assets/images/features3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="/assets/images/features4.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="/assets/images/features5.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="/assets/images/features6.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="/assets/images/features1.png" onclick="currentSlide(1)" alt="Mobile Ultrasound Scan">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="/assets/images/features2.png" onclick="currentSlide(2)" alt="Gender Reveal">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="/assets/images/features3.png" onclick="currentSlide(3)" alt="Daily Pregnancy Insights">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="/assets/images/features4.png" onclick="currentSlide(4)" alt="Community Chats">
+    </div>
+    
+    <div class="column">
+      <img class="demo" src="/assets/images/features5.png" onclick="currentSlide(5)" alt="Due Date Calculator">
+    </div>
+    
+    <div class="column">
+      <img class="demo" src="/assets/images/features6.png" onclick="currentSlide(6)" alt="To-do List">
+    </div>
+  </div>
+</div>
+          
+          
+          
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
       
     <!-- s3_our_pricing -->
       <section id="s3_our_pricing">
@@ -236,7 +348,7 @@
       
       <div class="s4_get_started_container">
       <div class="email_pic">
-      <img class="img-fluid" src="/assets/images/mailman.png" alt="">
+      <img class="img-fluid imagess" src="/assets/images/mailman.png" alt="">
       </div>
       
       <div class="email_form">
@@ -288,6 +400,7 @@
     
     <!-- AOS JavaScript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/javscript.js"></script>
     
     
   </body>
