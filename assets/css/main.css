@@ -448,7 +448,7 @@ body{
     grid-row: 2;
 }
 
-@media (max-width: 768px){
+@media (max-width: 992px){
     .s4_get_started_container{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -459,11 +459,13 @@ body{
     
 }
     .email_pic{
-    grid-area: email_pic;
+        grid-area: email_pic;
+        text-align: center;
         grid-row: 1;
 }
 .email_form{
     grid-area: email_form;
+    text-align: center;
     grid-row: 2;
 }
 }
