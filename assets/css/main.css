@@ -2,6 +2,9 @@ body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
+.container{
+    overflow-x: hidden;
+}
 
 /*-------------- For Bounce Effect On Images -------------*/
 .imagess {
