@@ -25,6 +25,19 @@ body{
       }
     }
 
+/*-------------- AOS image rotate -------------*/
+[data-aos="rotate-c"] {
+  transform: rotate(-180deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(0deg);
+}
+
+
+
+
 
 .features_list_header{
     font-family: Raleway;
